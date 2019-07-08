@@ -1,0 +1,231 @@
+body {
+    background-image: url("../bulbasaurImages/background.jpg");
+    background-repeat: no-repeat;
+    height: 68vh; /*for some reason 100vh makes the page twice as long*/
+    width: 100%;  
+    font-family: 'Bubblegum Sans', cursive;
+  
+}
+
+.startPage {
+  font-family: 'Bubblegum Sans', cursive;
+  height: 100vh;
+  padding: 30px
+}
+
+.title {
+  font-size: 16vw;
+  color: rgb(156, 41, 167);
+  text-shadow: 5px 5px 5px black;
+  text-align: center;
+  top: 5%;
+  left: 50%
+}
+
+.secondHeader {
+  font-size: 5vw;
+  color: rgb(156, 41, 167);
+  text-shadow: 2px 2px 2px  black;
+  text-align: center;
+  top: 50%;
+  left: 50%
+}
+
+.eggHolderDiv {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  /* height: auto; */
+}
+#eggHolder {
+    /* position: absolute; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 150px; */
+    /* height: auto; */
+}
+
+.stats {
+    padding: 6px
+}
+
+.buttons:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.statusBoard {
+    /* text-align: left; */
+    margin: 0px;
+    border: 2px solid darkgreen;
+    background-color: rgb(41, 230, 66);
+    position: absolute;
+    width: 15%;
+    top: 0;
+    font-size: 25px
+}
+
+.stats-row {
+    /* text-align: left; */
+    margin: 0px;
+    border: 2px solid darkgreen;
+    background-color: rgb(41, 230, 66);
+    position: absolute;
+    width: 100%;
+    bottom: 10vh;
+    font-size: 25px
+}
+
+.col-sm {
+    border: 2px solid darkgreen;
+}
+.button {
+    float: right;
+    border-right: 3px solid darkgreen;
+    border-left: 3px solid darkgreen
+}
+  
+#buttonsGroup {
+  text-align: center;
+  margin: 20px 0 10px 0 
+}
+  
+#hatchNow, #myBtn {
+    font-size: 4vh;
+    margin: 10px 40px 10px 40px;
+    border-radius: 10px;
+    border: 2px solid darkgreen;
+    box-shadow: 2px 2px 2px  black;
+
+
+}
+#hatchNow:hover, #myBtn:hover {
+  background-color:  rgb(156, 41, 167);
+}
+
+.modal {
+    display: none; 
+    left: 25%;
+    top: 20%;
+    width: 50%; 
+    height: 60%;
+    overflow: auto;
+    background-color: rgb(41, 190, 91);
+    border: 6px solid darkgreen
+}
+.modalContainer{
+    padding: 20px;
+    border: 0px solid darkgreen;
+    width: 100%;
+    height: 100%;
+}
+.modalHeader {
+    margin: 2vh;
+    text-align: center;
+    color: rgb(156, 41, 167);
+    
+}
+.modalBody {
+  font-size: 3.5vh
+
+}
+.modalFooter {
+    text-align: center;
+}
+.closeButton {
+    color: black;
+    float: right;
+    margin: 1vw;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 0;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+  
+.closeButton:hover,
+.closeButton:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#nameInput {
+  text-shadow: 2px 2px 2px  greenyellow;
+  text-align: center;
+  margin: 15px 0 0 0
+}
+
+#newPetName {
+  margin: 10px
+}
+
+#nameYourPet {
+  font-size: 4vw;
+  color: rgb(156, 41, 167);
+  margin: 10px;
+}
+
+#nowStart {
+  font-size: 4vw;
+  color: rgb(156, 41, 167);
+  margin: 30px;
+  text-shadow: 2px 2px 2px  greenyellow;
+  text-align: center;
+  word-wrap: normal
+
+}
+
+
+
+
+
+.slide-slow {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+.slide-slow img {
+  position: relative;
+  animation: slide-slow 15s, slide-slow-img 15s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide-slow {
+  0% {
+    left: calc(100% - 175px);
+  }
+  49.99% {
+    left: 2%;
+  }
+  50% {
+    left: 2%;
+  }
+  99.99% {
+    left: calc(100% - 175px);
+  }
+  100% {
+    left: calc(100% - 175px);
+  }
+}
+
+@keyframes slide-slow-img {
+  0% {
+    transform: scaleX(1);
+  }
+  48% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(-1);
+  }
+  98% {
+    transform: scaleX(-1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+

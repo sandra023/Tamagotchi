@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Tamagotchi</title>
+  <link rel="stylesheet" href="css/2main.css">
+</head>
+
+
+<body id='body'> 
+    <audio src="music.mp3"></audio>
+      <!-- <embed src="music.mp3"  loop="true"  hidden="true" autostart="true">   -->
+      <!-- <embed  src="/music.mp3" loop="true" hidden="true" autostart="true"> -->
+  <div class='startPage'>
+    <h1 class='title'>Tamagachi</h1>
+    <h2 class='secondHeader'>Would you like to adopt a pet?</h2>
+    <form id="submitPetName">
+        <div id="nameInput">
+          <label id="nameYourPet">Name your new pet:  </label>
+          <input type="text" id="submit">
+          <button type="submit" id="newPetName">Submit</button>
+        </div>
+      </form>
+    <div id='nowStart' style='display: none'>Great! Now you can choose one of the options below.</div>
+    <div id="buttonsGroup">
+    <button id="hatchNow">Hatch My New Pet</button>
+    <button id="myBtn">Care Instructions</button>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modalContainer">
+        <div class="modalHeader">
+          <span class="closeButton">&times;</span>
+          <h2>How to take care of your new pet!</h2>
+        </div>
+        <div class="modalBody">
+          <p>Intructions:</p>
+          <p>Your new pet has a status bar at the bottom of the page to help you take care of it. They must be fed when they get hungry, played with when they get bored, and put to bed when they get sleepy. </p>
+          <p>Keep your pet alive by making sure none of their status bars reach 10!</p>
+        </div>
+        <div class="modalFooter">
+          <p>. . . . .</p>
+          <h6>I own none of this, please don't sue, I have nothing but student loans anyway.</h3>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Found the setup for a modal on W3schools.com -->
+
+
+    <div id="background" style="display: none">
+      <div class='statusBoard'>
+        <div class='stats' id= 'petName'>Name: </div>
+        <div class='stats' id= 'petAge'>Age: 1</div>
+        <div class='stats' id= 'timer'>Timer: 0</div>
+      </div>
+      <div class="eggHolderDiv">
+        <img id="eggHolder" src="bulbasaurImages/bestEggPoof.gif">
+        <!-- 5.18seconds -->
+      </div>
+      <div class="slide-slow" style=" display: none">
+        <img class='walk' src="bulbasaurImages/walking.gif" alt="walking bulbasaur">
+      </div>
+      <!-- found the animation on https://jsfiddle.net/jakecigar/m7qkmgzu/ -->
+
+      <div class="bottom-navBar">
+        <div class='row stats-row'>
+          <div class='col-sm'><span id="hunger">Hunger: 5</span><button class="button" id='feedPet'>Feed Your Pet</button></div>
+          <div class='col-sm'><span id='boredom'>Boredom: 5</span><button class="button" id='playWithPet'>Play With Your Pet</button></div>
+          <div class='col-sm'><span id='sleepyness'>Sleepyness: 5</span><button class="button" id='lightsOut'>Bed Time!</button></div>
+        </div>
+      </div>
+
+     
+
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="js/2app.js"></script>
+</body>
+
+</html>
